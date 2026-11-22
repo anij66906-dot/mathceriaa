@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MATHCERIA - Media pembelajaran interaktif operasi perkalian kelas VII">
+  <title>MATHCERIA | Belajar Perkalian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">✦</span><div><strong>MATHCERIA</strong><small>Belajar jadi seru!</small></div></div>
+      <nav aria-label="Menu utama">
+        <button class="nav-item active" data-page="home"><span>⌂</span> Beranda</button>
+        <button class="nav-item" data-page="materials"><span>📘</span> Materi</button>
+        <button class="nav-item" data-page="practice"><span>✏️</span> Latihan</button>
+        <button class="nav-item" data-page="evaluation"><span>📝</span> Evaluasi</button>
+        <button class="nav-item" data-page="progress"><span>📊</span> Progresku</button>
+      </nav>
+      <div class="sidebar-note"><span>🌟</span><p>Terus berlatih, karena matematika bisa dipelajari sedikit demi sedikit!</p></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div><p class="eyebrow">MEDIA PEMBELAJARAN INTERAKTIF</p><h1 id="pageTitle">Halo, Sahabat Matematika! 👋</h1></div>
+        <div class="student-chip"><span class="avatar">🧑‍🎓</span><span>Siswa Kelas VII</span></div>
+      </header>
+
+      <section class="page active" id="page-home">
+        <div class="hero">
+          <div class="hero-copy"><span class="pill">✨ Ayo belajar bersama</span><h2>Perkalian jadi<br><em>lebih mudah!</em></h2><p>Pelajari konsepnya, coba latihan bertahap, lalu lihat perkembangan belajarmu.</p><button class="btn btn-light" data-go="materials">Mulai Belajar <span>→</span></button></div>
+          <div class="hero-art" aria-hidden="true"><div class="bubble b1">×</div><div class="bubble b2">+</div><div class="math-card"><strong>7 × 8</strong><span>=</span><b>56</b></div><div class="bubble b3">✦</div></div>
+        </div>
+        <div class="section-heading"><div><p class="eyebrow">PILIH KEGIATAN</p><h2>Perjalanan belajarmu</h2></div></div>
+        <div class="feature-grid">
+          <article class="feature-card card-purple"><div class="feature-icon">📖</div><h3>Materi</h3><p>Pahami operasi perkalian dengan contoh sederhana.</p><button class="text-btn" data-go="materials">Buka materi →</button></article>
+          <article class="feature-card card-blue"><div class="feature-icon">🎯</div><h3>Latihan</h3><p>Asah kemampuanmu dari tingkat dasar hingga lanjutan.</p><button class="text-btn" data-go="practice">Mulai latihan →</button></article>
+          <article class="feature-card card-orange"><div class="feature-icon">🏆</div><h3>Evaluasi</h3><p>Uji pemahamanmu dan raih hasil terbaik.</p><button class="text-btn" data-go="evaluation">Kerjakan evaluasi →</button></article>
+        </div>
+        <div class="tip-banner"><span>💡</span><div><strong>Tips belajar</strong><p>Kerjakan soal dengan teliti. Jika jawabanmu salah, pelajari pembahasannya lalu coba lagi.</p></div></div>
+      </section>
+
+      <section class="page" id="page-materials">
+        <div class="section-heading"><div><p class="eyebrow">MATERI PEMBELAJARAN</p><h2>Kenali operasi perkalian</h2><p class="muted">Pelajari ringkasan berikut sebelum mengerjakan latihan.</p></div></div>
+        <div class="lesson-grid">
+          <article class="lesson-card"><span class="lesson-number">01</span><h3>Apa itu perkalian?</h3><p>Perkalian merupakan penjumlahan berulang dari bilangan yang sama.</p><div class="example-box">4 × 3 = 3 + 3 + 3 + 3 = <strong>12</strong></div></article>
+          <article class="lesson-card"><span class="lesson-number">02</span><h3>Sifat komutatif</h3><p>Urutan bilangan pada perkalian dapat ditukar dan hasilnya tetap sama.</p><div class="example-box">5 × 2 = 2 × 5 = <strong>10</strong></div></article>
+          <article class="lesson-card"><span class="lesson-number">03</span><h3>Sifat asosiatif</h3><p>Pengelompokan bilangan pada perkalian tidak mengubah hasil.</p><div class="example-box">(2 × 3) × 4 = 2 × (3 × 4) = <strong>24</strong></div></article>
+          <article class="lesson-card"><span class="lesson-number">04</span><h3>Sifat distributif</h3><p>Perkalian dapat didistribusikan terhadap penjumlahan.</p><div class="example-box">3 × (4 + 2) = (3 × 4) + (3 × 2) = <strong>18</strong></div></article>
+        </div>
+        <div class="tip-banner"><span>🧠</span><div><strong>Ingat!</strong><p>Perkalian bilangan positif dan negatif: tanda sama menghasilkan positif, tanda berbeda menghasilkan negatif.</p></div></div>
+      </section>
+
+      <section class="page" id="page-practice">
+        <div class="section-heading"><div><p class="eyebrow">DRILL AND PRACTICE</p><h2>Latihan bertahap</h2><p class="muted">Pilih tingkat latihan. Setiap tingkat berisi 5 soal.</p></div></div>
+        <div class="level-grid">
+          <button class="level-card level-easy" data-level="basic"><span>🌱</span><h3>Dasar</h3><p>Perkalian bilangan sederhana</p><small id="status-basic">Belum dikerjakan</small></button>
+          <button class="level-card level-medium" data-level="middle"><span>🚀</span><h3>Menengah</h3><p>Perkalian dengan bilangan lebih besar</p><small id="status-middle">Belum dikerjakan</small></button>
+          <button class="level-card level-hard" data-level="advanced"><span>🔥</span><h3>Lanjutan</h3><p>Perkalian bilangan positif dan negatif</p><small id="status-advanced">Belum dikerjakan</small></button>
+        </div>
+        <div class="quiz-panel hidden" id="quizPanel">
+          <div class="quiz-top"><span class="pill" id="quizLevel">Latihan Dasar</span><span id="questionCounter">Soal 1 dari 5</span></div>
+          <div class="progress-track"><div id="questionProgress"></div></div>
+          <h3 id="questionText">Berapa hasilnya?</h3>
+          <div class="answer-row"><input id="answerInput" type="number" inputmode="numeric" placeholder="Ketik jawabanmu" aria-label="Jawaban"><button class="btn btn-primary" id="checkAnswer">Periksa</button></div>
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+          <div class="quiz-actions"><button class="btn btn-outline hidden" id="nextQuestion">Soal berikutnya →</button><button class="btn btn-outline hidden" id="finishQuiz">Lihat hasil</button></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-evaluation">
+        <div class="section-heading"><div><p class="eyebrow">EVALUASI PEMBELAJARAN</p><h2>Uji pemahamanmu</h2><p class="muted">Evaluasi terdiri dari 5 soal campuran.</p></div></div>
+        <div class="evaluation-intro card"><div class="big-emoji">🏆</div><div><h3>Siap menerima tantangan?</h3><p>Kerjakan soal dengan mandiri. Setelah selesai, kamu akan melihat skor dan pembahasan singkat.</p><button class="btn btn-primary" id="startEvaluation">Mulai evaluasi</button></div></div>
+        <div class="quiz-panel hidden" id="evaluationPanel">
+          <div class="quiz-top"><span class="pill">Evaluasi</span><span id="evalCounter">Soal 1 dari 5</span></div>
+          <div class="progress-track"><div id="evalProgress"></div></div>
+          <h3 id="evalQuestion">Berapa hasilnya?</h3>
+          <div class="answer-row"><input id="evalInput" type="number" inputmode="numeric" placeholder="Ketik jawabanmu" aria-label="Jawaban evaluasi"><button class="btn btn-primary" id="checkEvaluation">Periksa</button></div>
+          <div id="evalFeedback" class="feedback" aria-live="polite"></div>
+          <div class="quiz-actions"><button class="btn btn-outline hidden" id="nextEvaluation">Soal berikutnya →</button><button class="btn btn-outline hidden" id="finishEvaluation">Lihat hasil</button></div>
+        </div>
+        <div class="result-card hidden" id="evaluationResult"></div>
+      </section>
+
+      <section class="page" id="page-progress">
+        <div class="section-heading"><div><p class="eyebrow">DASHBOARD SISWA</p><h2>Progres belajarku 📊</h2><p class="muted">Ringkasan hasil yang tersimpan di browser/perangkat ini.</p></div><button class="btn btn-outline" id="resetProgress">Atur ulang progres</button></div>
+        <div class="stats-grid"><article class="stat-card"><span>Latihan selesai</span><strong id="statCompleted">0/3</strong><small>tingkat latihan</small></article><article class="stat-card"><span>Rata-rata latihan</span><strong id="statAverage">—</strong><small>skor tertinggi tiap tingkat</small></article><article class="stat-card"><span>Evaluasi terakhir</span><strong id="statEvaluation">—</strong><small>hasil evaluasi</small></article></div>
+        <div class="card progress-list"><h3>Riwayat latihan</h3><div id="progressRows"></div></div>
+        <p class="privacy-note">ℹ️ Progres disimpan secara lokal pada browser ini. Data tidak dikirim ke guru atau server, dan dapat hilang jika data browser dihapus atau siswa menggunakan perangkat/browser lain.</p>
+      </section>
+
+      <footer><span>© MATHCERIA</span><span>Belajar • Berlatih • Berkembang ✨</span></footer>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
